@@ -333,3 +333,19 @@ h6 {
     margin: 0 auto;
     display: block;
 }
+
+.content-404 {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.msg-404 {
+    margin-top: 2rem;
+}
+
+.msg-404 h3 {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
