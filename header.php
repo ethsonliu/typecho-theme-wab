@@ -16,10 +16,9 @@
     </title>
 
     <link href="<?php $this->options->logoUrl() ?>" rel="shortcut icon">
-    
     <link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<?php $this->options->themeUrl('css/style.css'); ?>" rel="stylesheet">
-    <link href="<?php $this->options->themeUrl('css/github-gist.min.css'); ?>" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/github-gist.min.css" rel="stylesheet">
+    <link href="<?php $this->options->themeUrl('css/wab.css'); ?>" rel="stylesheet">
     <script src="https://cdn.staticfile.org/marked/0.8.0/marked.min.js"></script>
 
     <!--[if lt IE 9]>
@@ -51,5 +50,6 @@
     </nav>
 </div>
 </header>
-        
+
+<div id="content">
 <div class="content">
