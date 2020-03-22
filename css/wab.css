@@ -77,6 +77,7 @@ figcaption .original::before {
 
 img {
     max-width: 100%;
+    max-height: 25rem;
 }
 
 blockquote {
