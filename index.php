@@ -49,6 +49,6 @@
 </div>
 <?php endif; ?>
 
-</div> <!-- end #content-container -->
+</div> <!-- end .content-container -->
 
 <?php $this->need('footer.php'); ?>
