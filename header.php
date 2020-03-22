@@ -51,5 +51,4 @@
 </div>
 </header>
 
-<div id="content">
 <div class="content">
