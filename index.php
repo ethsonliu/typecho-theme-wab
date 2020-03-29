@@ -1,4 +1,15 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; $this->need('header.php'); ?>
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+
+/**
+ * 一个超简洁，黑白式的 Typecho 主题。
+ * 
+ * @package Typecho Theme Wab
+ * @author Ethson Liu
+ * @version 1.0.0
+ * @link https://github.com/EthsonLiu/typecho-theme-wab
+ */
+
+$this->need('header.php'); ?>
 
 <div class="content-container">
 
