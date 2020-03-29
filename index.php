@@ -13,8 +13,6 @@ $this->need('header.php'); ?>
 
 <div class="content-container">
 
-<?php $ulEnd = false; ?>
-
 <?php if ($this->have()): ?>
 <?php while ($this->next()): ?>
 	<?php if (($this->sequence > 1)): ?>
@@ -47,18 +45,13 @@ $this->need('header.php'); ?>
 	<div class="post-list">
 	<h3>最新文章</h3>
 	<ul>
-	<?php $ulEnd = true; ?>
 	<?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
-<?php if ($ulEnd): ?>
-		<li>
-			<a href="/archives.html">更多文章...</a>
-		</li>
+	<li><a href="/archives.html">更多文章...</a></li>
 	</ul>
 </div>
-<?php endif; ?>
 
 </div> <!-- end .content-container -->
 
