@@ -1,6 +1,12 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
+function themeInit($archive) {
+    if ($archive->is('category')) {
+        $archive->parameter->pageSize = 1000000;
+    }
+}
+
 function themeConfig($form) {
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl',
     NULL,
@@ -18,5 +24,4 @@ function themeFields($layout) {
     _t('输入文章的简介，用于首页中的展示'));
     $layout->addItem($description);
 }
-
 

@@ -153,7 +153,7 @@ h6 {
 h1,
 h2 {
     padding-bottom: 0.3rem;
-    border-bottom: 0.0625rem solid #eaecef;
+    border-bottom: 0.0625rem solid #e7e7e7;
 }
 
 h1 {
@@ -183,6 +183,10 @@ h6 {
     font-size: 0.975rem;
 }
 
+.hidden {
+    display: none;
+}
+
 .header-container a {
     color: rgb(51, 51, 51);
 }
@@ -191,8 +195,8 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 24%;
-    box-shadow: 0 0.125rem 0 0 #f5f5f5;
+    margin: 0 23%;
+    box-shadow: 0 0.0625rem 0 0 #e7e7e7;
 }
 
 .header-container a {
@@ -266,7 +270,7 @@ h6 {
 
 .post-list h3 {
     padding-bottom: 0.3rem;
-    border-bottom: 0.0625rem solid #eaecef;
+    border-bottom: 0.0625rem solid #e7e7e7;
     margin-top: 0.5rem;
     font-weight: 400;
     font-size: 1.5rem;
@@ -292,8 +296,8 @@ h6 {
     letter-spacing: 0;
     font-size: 0.875rem;
     padding: 1rem;
-    margin: 0 24%;
-    border-top: 0.0625rem solid #eaecef;
+    margin: 0 23%;
+    border-top: 0.0625rem solid #e7e7e7;
     text-align: center;
 }
 
@@ -324,7 +328,7 @@ h6 {
 
 .post-declaration {
     margin-top: 3rem;
-    border: 0.0625rem solid #eaecef;
+    border: 0.0625rem solid #e7e7e7;
     border-radius: 1rem;
     padding: 0.5rem;
     background-color: rgb(255, 254, 239);
@@ -375,4 +379,48 @@ code::before, code::after {
 
 .hljs::before, .hljs::after {
     content: "";
+}
+
+.archive {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-outline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 25%;
+    margin-left: 8rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    border: 0.0937rem solid #e7e7e7;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 22rem;
+}
+
+.category h2 {
+    color: black;
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.archive-title {
+    margin-bottom: 1rem;
+}
+
+.archive-title p {
+    font-size: 1.05rem;
+    font-weight: 500;
+    background-color: #aad2f0;
+    border-radius: 1rem;
+    padding: 0.4rem 0 0.4rem 1rem;
+    margin: 0;
 }
