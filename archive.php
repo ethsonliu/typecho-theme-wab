@@ -15,7 +15,7 @@ $this->need('header.php'); ?>
     <div class="archive-title">
         <?php if ($this->is('page')): ?>
         <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
-        <p>文章总数：<?php $stat->publishedPostsNum() ?> 篇</p>
+        <p>文章总数：共 <?php $stat->publishedPostsNum() ?> 篇</p>
         <?php elseif ($this->is('category')): ?> <!-- 分类页面 -->
         <p>
         <?php
