@@ -10,7 +10,6 @@
 - [如何使用](#如何使用)
 - [TODO](#TODO)
 - [FAQ](#FAQ)
-- [赞助](#赞助)
 - [还有谁在用](#还有谁在用)
 
 ## 特点
@@ -40,11 +39,6 @@
 
 ## FAQ
 
-
-
-## 赞助
-
-![](https://github.com/EthsonLiu/typecho-theme-wab/blob/master/reward.jpg)
 
 ## 还有谁在用
 
