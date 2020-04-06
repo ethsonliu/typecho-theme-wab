@@ -253,19 +253,21 @@ h6 {
     color: rgb(14, 99, 127);
 }
 
-.date {
+.asset-meta,
+.post-meta {
+    font-size: 0.875rem;
+    line-height: 1.428;
     color: #858585;
     font-family: Lato, Monaco;
 }
 
-.fa-calendar {
-    color: #858585;
+.asset-meta {
+    margin-top: -0.5rem;
 }
 
-.asset-date {
-    margin-top: -0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.428;
+.post-meta {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .post-list h3 {

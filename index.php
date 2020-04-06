@@ -28,9 +28,10 @@ $this->need('header.php'); ?>
 		</h1>
 	</div>
 	<div class="asset-content">
-		<div class="asset-date">
-			<i class="fa fa-calendar"></i>
-			<time class="date"><?php $this->date('Y-m-d'); ?></time>
+		<div class="asset-meta">
+			<i class="fa fa-user"></i>&nbsp;<?php $this->author(); ?>&nbsp;&nbsp;&nbsp;
+			<i class="fa fa-calendar"></i>&nbsp;<?php $this->date('Y-m-d'); ?>&nbsp;&nbsp;&nbsp;
+			<i class="fa fa-tags"></i>&nbsp;<?php $this->category(', '); ?>
 		</div>
 		<div class="asset-description">
 			<p>

@@ -3,7 +3,7 @@
 <div class="content-container">
 <div class="post-info">
     <div class="post-title"><?php $this->title() ?></div>
-    <div class="post-date">
+    <div class="post-meta">
 	</div>
 </div>
 <div> <?php $this->content(); ?> </div>
