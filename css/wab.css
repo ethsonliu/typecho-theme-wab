@@ -426,3 +426,13 @@ code::before, code::after {
     padding: 0.4rem 0 0.4rem 1rem;
     margin: 0;
 }
+
+.MathJax_SVG,
+.MathJax_SVG_Display {
+    outline: 0;
+}
+
+.MathJax_SVG_Display {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
