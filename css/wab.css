@@ -376,7 +376,7 @@ code::before, code::after {
 
 .hljs {
     background: rgb(241, 243, 243);
-    padding: 0.5rem 0 0.5rem 0.8rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
 }
 
 .hljs::before, .hljs::after {
