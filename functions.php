@@ -23,5 +23,6 @@ function themeFields($layout) {
     _t('简介'),
     _t('输入文章的简介，用于首页中的展示'));
     $layout->addItem($description);
+    $description->input->setAttribute('style', 'width:700px;height:auto;');
 }
 
