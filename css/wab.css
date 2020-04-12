@@ -242,7 +242,7 @@ h6 {
 .content-container {
     display: flex;
     flex-direction: column;
-    margin: 3.75rem 27% 4rem 27%;
+    margin: 3.75rem 27% 2rem 27%;
 }
 
 .asset-title a {
