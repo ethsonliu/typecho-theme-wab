@@ -261,6 +261,10 @@ h6 {
     font-family: Lato, Monaco;
 }
 
+.date {
+    font-family: Lato, Monaco;
+}
+
 .asset-meta {
     margin-top: -0.5rem;
 }
@@ -435,4 +439,12 @@ code::before, code::after {
 .MathJax_SVG_Display {
     overflow-x: auto;
     overflow-y: hidden;
+}
+
+.space {
+    width: 4px;
+}
+
+.space-3x {
+    width: 12px;
 }
