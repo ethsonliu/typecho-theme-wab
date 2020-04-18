@@ -5,7 +5,7 @@
         <div class="post-title"><?php $this->title() ?></div>
         <div class="post-meta">
 			<i class="fa fa-user"></i>&nbsp;<?php $this->author(); ?>&nbsp;&nbsp;&nbsp;
-            <i class="fa fa-calendar"></i>&nbsp;<?php $this->date('Y-m-d'); ?>&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-calendar"></i>&nbsp;<time class="date"><?php $this->date('Y-m-d'); ?></time>&nbsp;&nbsp;&nbsp;
             <i class="fa fa-tags"></i>&nbsp;<?php $this->category(', '); ?>
 		</div>
     </div>
