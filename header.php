@@ -51,5 +51,4 @@
 </div>
 </header>
 
-<div id="dummy-content">
 <div class="content">

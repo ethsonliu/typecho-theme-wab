@@ -1,7 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
 </div> <!-- end .content -->
-</div> <!-- end #dummy-content -->
 
 <footer class="footer">
     <div class="footer-container">
@@ -24,12 +23,15 @@
 
 <script>
 window.onload = function() {
-	var allImgs = document.getElementById("dummy-content").getElementsByTagName("img");
-	console.log(allImgs);
+	var contentContainer = document.getElementsByClassName("content-container")
+    if (contentContainer.length != 1) {
+		console.log("ERROR: contentContainer.length != 1");
+		return;
+	}
+    var allImgs = contentContainer[0].getElementsByTagName("img"); // 得到 contentContainer 下的所有图片并做处理
 	var len = allImgs.length;
 	for (i = 0; i < len; ++i) { 
 		var imgHalfHeight = allImgs[i].naturalHeight / 2;
-		console.log(imgHalfHeight);
 		if (imgHalfHeight < 25 * 16) {
 			allImgs[i].style.maxHeight = String(imgHalfHeight) + "px";
 		}
