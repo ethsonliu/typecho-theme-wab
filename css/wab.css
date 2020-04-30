@@ -25,6 +25,10 @@ blockquote {
     margin: 0 0 1rem;
 }
 
+li p {
+    margin: 0;
+}
+
 hr {
     display: block;
     width: 100%;
