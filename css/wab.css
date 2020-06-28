@@ -1,0 +1,453 @@
+html {
+    overflow-y: scroll;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    background-color: white;
+    font-family: Roboto, 'Noto Sans', 'Microsoft Yahei', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    letter-spacing: 0.0375rem;
+}
+
+h1,
+p,
+figure,
+blockquote {
+    margin: 0 0 1rem;
+}
+
+li p {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 0.0625rem;
+    margin: 1.5rem 0;
+    border: none;
+    background-color: #eaecef;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    overflow: auto;
+    width: 100%;
+}
+
+table td,
+table th {
+    border: 0.0625rem solid rgb(221, 221, 221);
+    height: 1.875rem;
+}
+
+table thead th {
+    background-color: rgb(248, 248, 248);
+    width: 6.25rem;
+}
+
+table tr:nth-child(odd) {
+    background: #fff;
+}
+
+table tr:nth-child(even) {
+    background: rgb(248, 248, 248);
+}
+
+figure .representation {
+    display: block;
+    margin: 0 0 .5rem;
+}
+
+figcaption {
+    padding: 0 .5rem .5rem;
+    font-size: .8125rem;
+    text-align: right;
+}
+
+figcaption .original::before {
+    content: ' ';
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    /* max-height: 25rem; */
+}
+
+blockquote {
+    padding: 0.2rem 0 0.2rem 0.7rem;
+    border-left: 0.25rem solid #e5e5e5;
+    color: #686868;
+}
+
+blockquote p {
+    margin: 1rem 0 0 0;
+}
+
+blockquote cite {
+    display: block;
+    margin: 1rem 0 0;
+    font-size: .875rem;
+    text-align: right;
+}
+
+a {
+    color: rgb(54, 116, 217);
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+ol,
+ul {
+    margin: 0 0 1rem 2rem;
+    padding: 0;
+    list-style-position: outside;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-bottom: 0;
+}
+
+li {
+    margin: 0;
+}
+
+li:not(last-of-type) {
+    margin-bottom: .1rem;
+}
+
+abbr {
+    border-bottom: 1px dashed currentColor;
+    text-decoration: none;
+    cursor: help;
+}
+
+article,
+section {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+    padding-bottom: 0.3rem;
+    border-bottom: 0.0625rem solid #e7e7e7;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+}
+
+h2 {
+    font-size: 1.375rem;
+}
+
+h3 {
+    font-size: 1.275rem;
+}
+
+h4 {
+    font-size: 1.175rem;
+}
+
+h5 {
+    font-size: 1.075rem;
+}
+
+h6 {
+    font-size: 0.975rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.header-container a {
+    color: rgb(51, 51, 51);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 23%;
+    box-shadow: 0 0.0625rem 0 0 #e7e7e7;
+}
+
+.header-container a {
+    height: 3.4375rem;
+    line-height: 3.4375rem;
+}
+
+.logo>img {
+    vertical-align: middle;
+    padding-left: 1.2rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.nav-menu a {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 1.05rem;
+}
+
+.current {
+    color: rgb(54, 116, 217) !important;
+}
+
+.nav-menu a:hover {
+    box-shadow: 0 0.0625rem 0 0 rgb(54, 116, 217);
+}
+
+.nav-menu a:active {
+    box-shadow: 0 0.0625rem 0 0 rgb(54, 116, 217);
+}
+
+.content {
+    flex: 1;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3.75rem 27% 2rem 27%;
+}
+
+.asset-title a {
+    color: rgb(51, 51, 51);
+}
+
+.asset-title a:hover, a:active {
+    color: rgb(14, 99, 127);
+}
+
+.asset-meta,
+.post-meta {
+    font-size: 0.875rem;
+    line-height: 1.428;
+    color: #858585;
+}
+
+.date {
+    font-family: Lato, Monaco;
+}
+
+.asset-meta {
+    margin-top: -0.5rem;
+}
+
+.post-meta {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.post-list h3 {
+    padding-bottom: 0.3rem;
+    border-bottom: 0.0625rem solid #e7e7e7;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+}
+
+.item time {
+    font-size: 0.9rem;
+}
+
+.item a {
+    margin-left: 2rem;
+    color: rgb(51, 51, 51);
+}
+
+.item a:hover, a:active {
+    color: rgb(54, 116, 217);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0;
+    font-size: 0.875rem;
+    padding: 1rem;
+    margin: 0 23%;
+    border-top: 0.0625rem solid #e7e7e7;
+    text-align: center;
+}
+
+.copyright,
+.framework-info,
+.post-title,
+.post-date {
+    display: block;
+}
+
+.post-info {
+    text-align: center;
+}
+
+.post-title {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+}
+
+.post-date {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.428;
+}
+
+.post-declaration {
+    margin-top: 1rem;
+    border: 0.0625rem solid #e7e7e7;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 254, 239);
+}
+
+.content img {
+    margin: 0 auto;
+    display: block;
+}
+
+.content-404 {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.msg-404 {
+    margin-top: 2rem;
+}
+
+.msg-404 h3 {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+code {
+    display: inline;
+    margin: 0;
+    font-size: 0.875rem; 
+    line-height: 1.4rem;
+    padding: 0.2rem 0;
+    border-radius: 0.2rem;
+    color: #333333;
+    background: rgb(241, 243, 243);
+    font-family: Consolas,Menlo,Monaco,"lucida console","Liberation Mono","Courier New","andale mono",monospaceX,monospace,sans-serif
+}
+
+code::before, code::after {
+    content: "\00a0";
+    letter-spacing: -0.2rem;
+}
+
+.hljs {
+    background: rgb(241, 243, 243);
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.hljs::before, .hljs::after {
+    content: "";
+}
+
+.archive {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-outline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 25%;
+    margin-left: 8rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    border: 0.0937rem solid #e7e7e7;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 22rem;
+}
+
+.category h2 {
+    color: black;
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.archive-title {
+    margin-bottom: 1rem;
+}
+
+.archive-title p {
+    font-size: 1.05rem;
+    font-weight: 500;
+    background-color: #aad2f0;
+    border-radius: 1rem;
+    padding: 0.4rem 0 0.4rem 1rem;
+    margin: 0;
+}
+
+.MathJax_SVG,
+.MathJax_SVG_Display {
+    outline: 0;
+}
+
+.MathJax_SVG_Display {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.space {
+    width: 4px;
+}
+
+.space-3x {
+    width: 12px;
+}

@@ -3,9 +3,10 @@
 <div class="content-container">
     <div class="post-info">
         <div class="post-title"><?php $this->title() ?></div>
-        <div class="post-date">
-			<i class="fa fa-calendar"></i>
-			<time class="date"><?php $this->date('Y-m-d'); ?></time>
+        <div class="post-meta">
+			<i class="fa fa-user"></i>&nbsp;<?php $this->author(); ?>&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-calendar"></i>&nbsp;<time class="date"><?php $this->date('Y-m-d'); ?></time>&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-tags"></i>&nbsp;<?php $this->category(', '); ?>
 		</div>
     </div>
     <div>
@@ -16,12 +17,9 @@
             若文章有错误，请在 <a href="https://github.com/EthsonLiu/blog-articles/issues">Issues</a> 中提出，我会及时回复，谢谢。
         </p>
         <p>
-            如果您觉得文章不错，或者在生活和工作中帮助到了您，不妨 Buy Me A Coffee，谢谢。
+            如果您觉得文章不错，或者在生活和工作中帮助到了您，不妨给个 Star，谢谢。
         </p>
-        <p>
-            <img src="https://resource.ethsonliu.com/image/reward.jpg">
-        </p>
-        <p>（文章完）</p>
+        <p>(文章完)</p>
     </div>
     <div class="post-declaration">
         <div>文章作者：刘毅 (Ethson Liu)</div>

@@ -1,8 +1,17 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; $this->need('header.php'); ?>
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+
+/**
+ * 一个超简洁，黑白式的 Typecho 主题。
+ * 
+ * @package Typecho Theme Wab
+ * @author Ethson Liu
+ * @version 1.0.0
+ * @link https://github.com/EthsonLiu/typecho-theme-wab
+ */
+
+$this->need('header.php'); ?>
 
 <div class="content-container">
-
-<?php $ulEnd = false; ?>
 
 <?php if ($this->have()): ?>
 <?php while ($this->next()): ?>
@@ -19,9 +28,10 @@
 		</h1>
 	</div>
 	<div class="asset-content">
-		<div class="asset-date">
-			<i class="fa fa-calendar"></i>
-			<time class="date"><?php $this->date('Y-m-d'); ?></time>
+		<div class="asset-meta">
+			<i class="fa fa-user"></i>&nbsp;<?php $this->author(); ?>&nbsp;&nbsp;&nbsp;
+			<i class="fa fa-calendar"></i>&nbsp;<time class="date"><?php $this->date('Y-m-d'); ?></time>&nbsp;&nbsp;&nbsp;
+			<i class="fa fa-tags"></i>&nbsp;<?php $this->category(', '); ?>
 		</div>
 		<div class="asset-description">
 			<p>
@@ -36,19 +46,14 @@
 	<div class="post-list">
 	<h3>最新文章</h3>
 	<ul>
-	<?php $ulEnd = true; ?>
 	<?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
-<?php if ($ulEnd): ?>
-		<li>
-			<a href="/archives.html">更多文章...</a>
-		</li>
+	<li><a href="/archives.html">更多文章...</a></li>
 	</ul>
 </div>
-<?php endif; ?>
 
-</div> <!-- end #content-container -->
+</div> <!-- end .content-container -->
 
 <?php $this->need('footer.php'); ?>
