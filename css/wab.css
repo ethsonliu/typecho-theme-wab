@@ -91,8 +91,9 @@ blockquote {
     color: #686868;
 }
 
-blockquote p {
-    margin: 1rem 0 0 0;
+blockquote p:last-child
+{ 
+    margin-bottom: 0;
 }
 
 blockquote cite {
