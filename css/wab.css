@@ -90,8 +90,7 @@ blockquote {
     color: #686868;
 }
 
-blockquote p:last-child
-{ 
+blockquote p:last-child { 
     margin-bottom: 0;
 }
 
