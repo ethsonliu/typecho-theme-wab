@@ -38,9 +38,6 @@
             gtag('config', 'UA-151108701-1');
     </script>
 
-    <!-- Google AdSense -->
-    <script data-ad-client="ca-pub-4499936336438143" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
     <!-- 百度统计 -->
     <script>
         var _hmt = _hmt || [];
