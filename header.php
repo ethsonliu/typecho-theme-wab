@@ -38,17 +38,6 @@
             gtag('config', 'UA-151108701-1');
     </script>
 
-    <!-- 百度统计 -->
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?7ddd0eff43fef4ba9ff49cab07dfe79a";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-
 </head>
 
 <body>
