@@ -23,21 +23,26 @@
 
 <script>
 window.onload = function() {
+	console.log("window.screen.height = ", window.screen.height);
+	if (window.screen.height <= 1080) {
+		return;
+	}
+
 	var contentContainer = document.getElementsByClassName("content-container")
     if (contentContainer.length != 1) {
 		console.log("ERROR: contentContainer.length != 1");
 		return;
 	}
-    var allImgs = contentContainer[0].getElementsByTagName("img"); // 得到 contentContainer 下的所有图片并做处理
+
+    var allImgs = contentContainer[0].getElementsByTagName("img");
 	var len = allImgs.length;
-	for (i = 0; i < len; ++i) { 
-		var imgHalfHeight = allImgs[i].naturalHeight / 2;
-		if (imgHalfHeight < 25 * 16) {
-			allImgs[i].style.maxHeight = String(imgHalfHeight) + "px";
-		}
-		else {
+	for (i = 0; i < len; ++i) {
+		if (allImgs[i].naturalHeight < 25 * 16) {
+			allImgs[i].style.maxHeight = String(allImgs[i].naturalHeight) + "px";
+		} else {
 			allImgs[i].style.maxHeight = "25rem";
 		}
+		allImgs[i].src = allImgs[i].src.replace("x1", "x2");
  	}
 }
 </script>
