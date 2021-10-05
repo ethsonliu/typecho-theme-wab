@@ -4,9 +4,11 @@
 
 <footer class="footer">
     <div class="footer-container">
-		<div class="copyright">&copy;2018-<?php echo date('Y'); ?> By Ethson Liu</div>
 		<div class="framework-info">
 			Driven - <a href="http://www.typecho.org">Typecho</a> | Theme - <a href="https://github.com/EthsonLiu/typecho-theme-wab">Wab</a>
+		</div>
+		<div class="records">
+			<a href="http://beian.miit.gov.cn/">苏ICP备2021040561号</a> | ...
 		</div>
     </div>
 </footer>
