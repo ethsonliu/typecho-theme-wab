@@ -2,7 +2,7 @@
 
 一款简洁的黑白主题，灵感来自 [阮一峰的网络日志](http://www.ruanyifeng.com/blog/) 和 [Sindre Sorhus's site](https://sindresorhus.com/)，该主题只适用于 [Typecho](https://github.com/typecho/typecho)。
 
-**预览地址**：https://ethsonliu.com
+![](https://github.com/ethsonliu/typecho-theme-wab/blob/master/screenshot.png)
 
 ## 目录
 
